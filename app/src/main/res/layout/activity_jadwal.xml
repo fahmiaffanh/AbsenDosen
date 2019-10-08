@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".jadwal">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senin"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/Vogue"
+        android:layout_above="@id/layout_pagi"
+        android:layout_marginBottom="50dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/layout_pagi"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pagi"
+            android:id="@+id/txt_pagi"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/Vogue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TI sem 3 \n 103 \n Pemograman Web"
+            android:textAlignment="center"
+            android:id="@+id/pagi_satu"
+            android:layout_toRightOf="@id/txt_pagi"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selesai"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TI sem 3 \n 103 \n Pemograman Web"
+            android:textAlignment="center"
+            android:id="@+id/pagi_dua"
+            android:layout_toRightOf="@id/pagi_satu"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selesai"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_pagi"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layout_sore">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sore"
+            android:id="@+id/txt_sore"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/Vogue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TI sem 3 \n 103 \n Pemograman Web"
+            android:textAlignment="center"
+            android:id="@+id/sore_satu"
+            android:layout_toRightOf="@id/txt_sore"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selesai"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TI sem 3 \n 103 \n Pemograman Web"
+            android:textAlignment="center"
+            android:id="@+id/sore_dua"
+            android:layout_toRightOf="@id/sore_satu"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selesai"/>
+    </RelativeLayout>
+</RelativeLayout>
